@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-with, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+	<div id="content">
+  <!-- Navigation Bar -->
+    <header>
+        <h1 id="top-name">Kevin's Portfolio</h1>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="dog.html">My dog's gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </header>
+
+	<main>
+	   <h2 id="start" class="header2">Projects</h2>
+        <section class="list_projects">
+          <div class="row">
+
+            <div class="column">
+              <div class="card">
+                    <h3 class="proyect-tittle"> Student Planner Web Application - Class Project</h3>
+                      <div class="projects-info">
+                        <ul>
+                          <li>Current working in a team of 6, to provide an easy planner management and a tool to be more organized, productive , and involved with a subject or learning process.</li>
+                          <li>This project is currently in progress</li>
+                        </ul>
+                      </div>
+              </div>      
+            </div>
+
+             <div class="column">
+                <div class="card">
+                   <h3 class="proyect-tittle">Java Game Box: Galaga, Pacman and Zelda - Class Project</h3>
+                      <div class="projects-info">
+                        <ul>
+                          <li>Using object-oriented programming, worked in a group of two to make a a simplified version of three popular games: Galaga, Pacman and Zelda. Made with Java, used GitHub to work as a team on the code.</li>  
+                          <li>Made throughout Jan. 2020 - May 2020</li>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                   <h3 class="proyect-tittle">UPRM Moonbuggy - Engineering Team </h3> 
+                      <div class="projects-info">
+                        <ul>
+                          <li>Working with teammates to compete next year in Nasa's Human Exploration Rover Challenge 2021.</li>
+                        </ul>
+                      </div>
+                    <a href="images/photo-13.JPG"><img src="images/photo-13.JPG" alt="buggy"class="buggy"></a>
+                </div>
+              </div>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <p>Click here to get a random The Office Quote:<p>
+      <button onclick="addRandomGreeting()">The Office's Quote</button>
+      <div id="greeting-container"></div>
+    </footer>
+      
+    </div>
+
+</body>
+</html>

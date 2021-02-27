@@ -1,9 +1,303 @@
-#content {
+/*#content {
   margin-left: auto;
   margin-right: auto;
   width: 650px;
 }
+*/
+/* Below are some fonts I downloaded to better the look of my website*/
+@font-face {
+    font-family: 'Vogue';
+    src: url('fonts/Vogue-Light.eot');
+    src: url('fonts/Vogue-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Vogue-Light.woff2') format('woff2'),
+        url('fonts/Vogue-Light.woff') format('woff'),
+        url('fonts/Vogue-Light.ttf') format('truetype'),
+        url('fonts/Vogue-Light.svg#Vogue-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vogue1';
+    src: url('fonts/Vogue-Bold.eot');
+    src: url('fonts/Vogue-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Vogue-Bold.woff2') format('woff2'),
+        url('fonts/Vogue-Bold.woff') format('woff'),
+        url('fonts/Vogue-Bold.ttf') format('truetype'),
+        url('fonts/Vogue-Bold.svg#Vogue-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+*,
+*::before, 
+*::after{
+	box-sizing: border-box;
+}
+/*Navigation content*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(47,45,46);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: rgb(153,194,77);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*nav content stop*/
+
+/*Custom properties: */
+:root{
+	--fs--h1: 3rem;
+	--fs--h2: 2.25rem;
+	--fs--h3: 1.25rem;
+	--fs-body: 1rem;
+
+	--bs: 0.25em 0.25em 0.75em rgb(0,0,0,.25);
+}
+@media (min-width: 800px){
+	:root{
+		--fs--h1: 4.5rem;
+		--fs--h2: 3.75rem;
+		--fs--h3: 1.5rem;
+		--fs-body: 1.125rem;
+	}
+}
+/* General Styles*/
+
+/*For the about me section*/
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+.row {margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: rgb(47,45,46);
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/*finished the about me section*/
 
 #greeting-container {
   margin-top: 20px;
 }
+#start{
+	box-shadow: var(--bs);
+	margin-bottom: 1em;
+}
+#content{
+	position: relative;
+  	min-height: 100vh;
+}
+.info{
+	color: white;
+}
+#dog{
+	align-content: center;
+	text-align: center;
+}
+.projects-info{
+	color: white;
+	font-weight:normal;
+	font-size: 15px;
+}
+.facts{
+	color: rgb(218,196,247);
+}
+.header2{
+	margin-top: 3rem;
+}
+body {
+	background-color: rgb(46,64,87);	
+	line-height: 1.6;
+	font-size: var(--fs-body);
+}
+section{
+	padding: 5em 2em;
+}
+h1	{
+	margin: 0;
+	font-size: var(--fs--h1);
+}
+h2 {
+	background-color: rgb(46,64,87);
+	color: rgb(241,143,1);
+	text-align: left;
+	margin: 0;
+	font-size: var(--fs--h2);
+	
+}
+h3{
+	background-color: rgb(46,64,87);
+	color: rgb(153,194,77);
+	margin: 0;
+	font-size: var(--fs--h3);
+
+}
+#top-name{
+	color: rgb(4,139,168);
+	text-align: center;
+	text-indent: 15px;
+	border-color: rgb(47,45,46);
+	margin-top: 0px;
+	font-family: 'Vogue';
+    font-weight: bold;
+    font-style: normal;
+	font-size: var(--fs--h3);
+}
+img{
+	width: 300px;
+}
+.buggy{
+	width: 225px;
+	text-align: center;
+}
+.projects-info{
+	background-color:rgb(47,45,46); 
+}
+footer {
+  	position: absolute;
+  	width: 100%;
+  	color: rgb(212, 252, 195);
+	background-color: rgb(54,44,40);
+	text-align: center;
+	margin-top: 3rem: 
+}
+
+.section_intro{
+    font-family: 'Vogue';
+	margin-bottom: .25rem;
+	font-weight: var(--fw-reg);
+	color: rgb(241,143,1);
+}
+.section_intro strong{
+	font-family: 'Vogue1';
+	display: block;
+	font-weight: var(--fw-bold);
+	box-shadow: var(--bs);
+
+}
+
+
+.currently_studying{
+	margin: 0;
+	font-family: 'Vogue';
+	display: block;
+	background-color: white;
+	font-size: var(--fs--h3);
+	margin-bottom: 1em;
+}
+.current_university{
+	margin: 0;
+	font-family: 'Vogue';
+	display: block;
+	background-color: rgb(153,194,77);
+	font-size: var(--fs-body);
+	margin-top: 3em;
+}
+
+.intro{
+	position: relative;
+}
+
+nav{
+	display: none;
+}
+.intro__img{
+	box-shadow: var(--bs);
+	display: block;
+    width: 150px;
+}
+
+@media (min-width: 600px){
+	.intro{
+		display: grid;
+		width: min-content;
+		margin: 0 auto;
+		grid-column-gap: 1em;
+		grid-template-areas: 
+			"img title" 
+			"img subtitle";
+		grid-template-columns: min-content max-content;
+
+	}
+
+	.intro__img {
+		grid-area: img;
+		min-width: 250px;
+		position: relative;
+		z-index: 2;
+
+	}
+	.currently_studying{
+		align-self: start;
+		grid-column: -1 / 1;
+		grid-row: 2;
+		text-align: right;
+		position: relative;
+		left: -1.5em;
+		width: calc(100 + 1.5em);
+	}
+	.current_university{
+		align-self: start;
+		grid-column: -1 / 2;
+		grid-row: 2;
+		text-align: right;
+		position: relative;
+		left: -1.5em;
+		width: calc(100 + 1.5em);
+	}
+}
+
+
+
+
+
+
+
+

@@ -2,18 +2,67 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
+
+      <!-- Navigation Bar -->
+      <header>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#start">About</a>
+          <a href="dog.html">My dog's gallery</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      </header>
+
+      <!-- Introduction of myself -->
+      <section class="intro" id="home">
+        <h1 class="section_intro">
+          Hey guys, I am <strong>Kevin Linera</strong>
+        </h1>
+        <p class="currently_studying">software engineer undergradute</p>
+        <p class="current_university">Univeristy of Puerto Rico at Mayagüez</p>
+        <img src="images/photo-12.JPG" alt="self portrait" class="intro__img">
+      </section>
+
+      <!-- About Me section -->
+      <section class="about_me">
+          <h2 id="start">A little bit about me</h2>
+          <div class="row">
+
+            <div class="column">
+              <div class="card">
+                <h3>Background</h3>
+                    <p class="info">I was born and raised in a Puerto Rico. 'Yo soy Boricua, pa' que tu lo sepas!', is a cheer that we say in the island to identify us in a crowd. I am very proud of my culture and all of that comes with it. I love the food, the music and the people. My favorite traditional plate is called 'mofongo'. </p>
+              </div>
+                  
+            </div>
+
+             <div class="column">
+                <div class="card">
+                  <h3> Passions </h3>
+                    <p class="info"> I love to play tennis, is my favorite sport. Also, I enjoy taking roadtrips around the island and have a chill and relax time. Love lisening to music, R&B and alternative are some of my favorites.</p>
+                    <p class="facts"> Fun Fact: We have one of the longest holidays on the planet. </p>
+                </div>
+             </div>
+
+          </div>
+      </section>
+      <footer>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <p>Click here to get a random The Office Quote:<p>
+      <button onclick="addRandomGreeting()">The Office's Quote</button>
       <div id="greeting-container"></div>
+    </footer>
+
     </div>
+
   </body>
 </html>

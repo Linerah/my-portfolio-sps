@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1 id="top-name">Kevin's Portfolio</h1>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </header>
+	<div id="content">
+	<main id="dog">
+		<h2 id="start" class="header2">Appreciation post for my dog Bobby</h2>
+            <div>
+              <a href="images/photo-2.JPG"><img class="dog__images" src="images/photo-2.JPG" alt="Bobby"></a>
+              <a href="images/photo-3.JPG"><img class="dog__images" src="images/photo-3.JPG" alt="Bobby"></a>
+              <a href="images/photo-4.JPG"><img class="dog__images" src="images/photo-4.JPG" alt="Bobby"></a>
+              <a href="images/photo-5.JPG"><img class="dog__images" src="images/photo-5.JPG" alt="Bobby"></a>
+              <a href="images/photo-6.JPG"><img class="dog__images" src="images/photo-6.JPG" alt="Bobby"></a>
+              <a href="images/photo-7.JPG"><img class="dog__images" src="images/photo-7.JPG" alt="Bobby"></a>
+              <a href="images/photo-10.JPG"><img class="dog__images" src="images/photo-10.JPG" alt="Bobby"></a>
+              <a href="images/photo-11.jpg"><img class="dog__images" src="images/photo-11.jpg" alt="Bobby"></a>
+            </div>
+    </main>
+
+    <footer>
+      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <p>Click here to get a random The Office Quote:<p>
+      <button onclick="addRandomGreeting()">The Office's Quote</button>
+      <div id="greeting-container"></div>
+    </footer>
+      
+	</div>
+</body>
+</html>
