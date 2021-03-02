@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['“I just want to lie on the beach and eat hot dogs. That’s all I’ve ever wanted.” – Kevin Malone', '“And I knew exactly what to do. But in a much more real sense, I had no idea what to do.” – Michael Scott', '“There’s a lot of beauty in ordinary things. Isn’t that kind of the point?” – Pam Beesly', '“I talk a lot, so I’ve learned to tune myself out.” – Kelly Kapoor'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -26,3 +26,13 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+

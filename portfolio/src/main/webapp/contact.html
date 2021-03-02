@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-with, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+	<div id="content">
+  <!-- Navigation Bar -->
+    <header>
+        <h1 id="top-name">Kevin's Portfolio</h1>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="dog.html">My dog's gallery</a>
+          <a href="prjects.html">Projects</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </header>
+
+	<main>
+	   <h2 id="start" class="header2">Projects</h2>
+        <section class="list_projects">
+          <div class="row">
+
+            <div class="column">
+              <div class="card">
+                    <h3 class="proyect-tittle"> LinkedIn</h3>
+                      <div class="projects-info">
+                        <a href="https://www.linkedin.com/in/linerakevin"><img src="images/photo-14.png" class="buggy"></a>
+                      </div>
+              </div> 
+
+            </div>
+            <div class="column">
+              <div class="card">
+                    <h3 class="proyect-tittle"> Resume</h3>
+                      <div class="projects-info">
+                        <a href="Resume_KevinLinera2021.pdf"><img src="images/photo-15.png" class="buggy"></a>
+                      </div>
+              </div>      
+            </div>
+
+             <div class="column">
+                <div class="card">
+                   <h3 class="proyect-tittle">Github</h3>
+                      <div class="projects-info">
+                        <a href="https://www.github.com/Linerah"><img src="images/photo-17.jpg" class="buggy"></a>
+                      </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                   <h3 class="proyect-tittle">Instagram</h3>
+                      <div class="projects-info">
+                         <a href="https://www.instagram.com/kevinlinera/"><img src="images/photo-16.svg" class="buggy"></a>
+                      </div>
+                </div>
+              </div>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <p>Click here to get a random The Office Quote:<p>
+      <button onclick="addRandomGreeting()">The Office's Quote</button>
+      <div id="greeting-container"></div>
+    </footer>
+      
+    </div>
+
+</body>
+</html>
