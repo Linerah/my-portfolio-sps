@@ -6,8 +6,12 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <!-- Linked my JS asynchronous function below: -->
+    <script src="script-1.js"></script>
   </head>
-  <body>
+  
+  <!-- Used the body's onload attribute to run the function on loading the DOM -->
+  <body onload="displayString()">
     <div id="content">
 
       <!-- Navigation Bar -->
@@ -25,7 +29,8 @@
       <!-- Introduction of myself -->
       <section class="intro" id="home">
         <h1 class="section_intro">
-          Hey guys, I am <strong>Kevin Linera</strong>
+            <!-- added the random message to my page using JS and Servlet -->
+          <div id="message-server"></div><strong>Kevin Linera</strong>
         </h1>
         <p class="currently_studying">software engineer undergradute</p>
         <p class="current_university">Univeristy of Puerto Rico at Mayagüez</p>
