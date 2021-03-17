@@ -38,7 +38,11 @@ public class NewTaskServlet extends HttpServlet {
     long timestamp = System.currentTimeMillis();
 
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
+    // Each entity has a key.
+    // Key with its kind. Kind is similar to class name.
     KeyFactory keyFactory = datastore.newKeyFactory().setKind("Task");
+
+    // Entity -> Instance of datastore.
     FullEntity taskEntity =
         Entity.newBuilder(keyFactory.newKey())
             .set("title", title)

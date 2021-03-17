@@ -26,6 +26,7 @@
 *::after{
 	box-sizing: border-box;
 }
+
 /*Navigation content*/
 .sidenav {
   height: 100%;
@@ -150,10 +151,11 @@ body {
 	background-color: rgb(46,64,87);	
     line-height: 1.6;
     font-family: 'Vogue';
-	font-size: var(--fs-body);
+    font-size: var(--fs-body);
+    margin: 0;
 }
 section{
-	padding: 5em 2em;
+	padding: 9em 2em;
 }
 h1	{
 	margin: 0;
@@ -173,6 +175,11 @@ h3{
 	margin: 0;
 	font-size: var(--fs--h3);
 
+}
+form{
+    color: white;
+    align-items: center;
+    background-color: rgb(241,143,1);
 }
 #top-name{
 	color: rgb(4,139,168);
@@ -203,7 +210,10 @@ footer {
 	text-align: center;
 	margin-top: 3rem;
 }
-
+.intro {
+    /* I could put an image here */
+    background-size: 100% 100%;
+}
 .section_intro{
     font-family: 'Vogue';
 	margin-bottom: .25rem;
@@ -237,9 +247,13 @@ footer {
 }
 
 .intro{
-	position: relative;
+    position: relative;
+    margin: 0;
+    /* height: 100vh;  */
 }
-
+span{
+    position: relative;
+}
 nav{
 	display: none;
 }
@@ -253,8 +267,14 @@ nav{
 	.intro{
 		display: grid;
 		width: min-content;
-		margin: 0 auto;
-		grid-column-gap: 1em;
+        /* margin: 0 auto; */
+        margin: 0;
+        margin-right: 0;
+        /* grid-column-gap: 1em; */
+        text-align: center;
+        justify-content: center;
+        grid-column-gap: 5em;
+        width: 100%;
 		grid-template-areas: 
 			"img title" 
 			"img subtitle";
@@ -274,7 +294,8 @@ nav{
 		grid-column: -1 / 1;
 		grid-row: 2;
 		text-align: right;
-		position: relative;
+        position: relative;
+        padding-right: 0.5em;
 		left: -1.5em;
 		width: calc(100 + 1.5em);
 	}
@@ -282,8 +303,10 @@ nav{
 		align-self: start;
 		grid-column: -1 / 2;
 		grid-row: 2;
-		text-align: right;
-		position: relative;
+        text-align: right;
+        position: relative;
+        padding-right: 0.5em;
+        margin-bottom: 2em;
 		left: -1.5em;
 		width: calc(100 + 1.5em);
 	}
