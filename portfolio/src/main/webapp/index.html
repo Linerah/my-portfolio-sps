@@ -58,6 +58,34 @@
                 </div>
              </div>
 
+            <div class="column">
+                <div class="card">
+                    <h3> Contact me! </h3>
+                    <form action="/form-handler" method="POST">
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name."><br>
+
+                        <label for="lname">Last Name:</label><br>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name."><br>
+                        
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email" placeholder="Your email contact."><br>
+
+                        <label for="reason">Reason:</label><br>
+                        <select id="reason" name="reason">
+                            <option value="work">Work</option>
+                            <option value="collaborate">Collaborate</option>
+                            <option value="suggestion">suggestion</option>
+                        </select>
+                        <br>
+                        <label for="subject">Subject</label><br>
+                        <textarea id="subject" name="subject" placeholder="Additional information here.." style="height:200px"></textarea>
+                        <br>
+                        <input type="submit" />
+                    </form>
+                </div>
+             </div>
+
           </div>
       </section>
       <footer>
